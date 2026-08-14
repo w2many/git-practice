@@ -68,6 +68,8 @@ print(result)
 
 print(multiply(1,7))
 
+print("test2")
+
 
 
 
