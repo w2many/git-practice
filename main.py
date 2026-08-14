@@ -66,4 +66,6 @@ def multiply(a: int, b: int):
 result = asyncio.run(sum(5,4))
 print(result)
 
-print(multiply(1,7))
+print(multiply(1, 7))
+
+print(multiply(4, 5))
