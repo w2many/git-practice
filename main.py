@@ -15,6 +15,7 @@ def get_users():
             {"id": 2, "name": "user2"},
             {"id": 3, "name": "user3"}]
 
+#some code
 
 def repeat(times: int):
     def decorator(func: Callable):
