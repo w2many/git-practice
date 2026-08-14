@@ -16,6 +16,7 @@ def get_users():
             {"id": 3, "name": "user3"}]
 
 #some code
+#some code
 
 def repeat(times: int):
     def decorator(func: Callable):
@@ -69,3 +70,18 @@ print(result)
 
 
 print(multiply(1,7))
+
+print("test2")
+
+print("just test merge")
+
+
+
+
+
+
+print("yoyoyoyo")
+print("yoyoyoyo")
+print("yoyoyoyo")
+print("yoyoyoyo")
+print("stop")
