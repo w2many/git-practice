@@ -5,7 +5,7 @@ import inspect
 import asyncio
 
 def Hello():
-    print("hello!!!")
+    print("Hello!!!")
 
 def get_user():
     return {"id": 1, "name": "user"}
