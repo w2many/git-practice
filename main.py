@@ -69,7 +69,6 @@ print(result)
 print(multiply(1, 7))
 
 print(multiply(4, 5))
-print(multiply(1,7))
 
 
 def payment_func(a):
