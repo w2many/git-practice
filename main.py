@@ -71,6 +71,6 @@ print(multiply(1, 7))
 print(multiply(4, 5))
 
 
-def payment_func(a):
+def payment_func(a: int):
     ...
     return a
