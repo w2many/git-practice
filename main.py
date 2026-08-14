@@ -1,5 +1,6 @@
 from typing import Callable
 import time
+import functools
 
 def Hello():
     print("hello!!!")
@@ -15,6 +16,7 @@ def get_users():
 
 def repeat(times: int):
     def decorator(func: Callable):
+        @functools.wraps(func)
         def wrapper(*args, **kwargs):
             results = []
             for i in range(times):
