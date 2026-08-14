@@ -15,6 +15,7 @@ def get_users():
             {"id": 2, "name": "user2"},
             {"id": 3, "name": "user3"}]
 
+#some code
 
 def repeat(times: int):
     def decorator(func: Callable):
@@ -66,19 +67,5 @@ def multiply(a: int, b: int):
 result = asyncio.run(sum(5,4))
 print(result)
 
+
 print(multiply(1,7))
-
-print("test2")
-
-
-
-
-
-
-
-
-print("yoyoyoyo")
-print("yoyoyoyo")
-print("yoyoyoyo")
-print("yoyoyoyo")
-print("stop")
