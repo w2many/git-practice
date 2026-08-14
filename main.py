@@ -13,16 +13,24 @@ def get_users():
             {"id": 3, "name": "user3"}]
 
 
-def deco(func: Callable):
-    def wrapper(*args, **kwargs):
-        start_time = time.time()
-        call = func(*args, **kwargs)
-        end_time = time.time()
-        print(f"функция {func.__name__} выполнялась {end_time-start_time}")
-        return call
-    return wrapper
+def repeat(times: int):
+    def decorator(func: Callable):
+        def wrapper(*args, **kwargs):
+            results = []
+            for i in range(times):
+                start_time = time.time()
 
-@deco
+                call = func(*args, **kwargs)
+                results.append(call)
+                
+                end_time = time.time()
+
+                print(f"функция {func.__name__} выполнялась {end_time-start_time}")
+            return results
+        return wrapper
+    return decorator
+
+@repeat(3)
 def func1(a: int, b: int):
     return a + b
 
